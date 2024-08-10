@@ -1,0 +1,40 @@
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseCard from "../components/BaseCard.astro";
+import Collapse from "../components/blog/collapse.astro";
+import Diff from "../components/blog/diff.astro";
+import Error from "../components/blog/error.astro";
+import Info from "../components/blog/info.astro";
+import Kbd from "../components/blog/kbd.astro";
+import Success from "../components/blog/success.astro";
+import Warning from "../components/blog/warning.astro";
+import TimeLine from "../components/page/TimeLine.astro";
+import LinkCard from "../components/page/LinkCard.astro";
+
+<BaseLayout title="About">
+  <BaseCard title="About">
+# About Me
+
+---
+
+## Brief introduction
+
+I can write both front-end and back-end code.<br/>
+**React** with **TypeScript** is my favorite front-end framework.<br/>
+**Gin** with **Go** is my favorite back-end framework.<br/>
+**Next.js** is my favorite full-stack framework.<br/>
+**PostgreSQL** is my favorite database.<br/>
+And I'm also good at **C++**, **C#**, **Python** and a little bit **Rust**.<br/>
+
+## TimeLine
+
+    <TimeLine
+
+items={[
+{ year: "2023-6-9", event: "Graduated from high school" },
+{ year:"2023-7-X", event:"Learing C# and C++"},
+{year:"2023-8-X",event: "Learing React"}
+]}
+/>
+
+  </BaseCard>
+</BaseLayout>
