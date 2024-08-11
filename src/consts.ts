@@ -12,7 +12,7 @@ export const USER_NAME = "Kori Miyohashi";
 export const USER_AVATAR = "/Alice.jpg";
 
 // Server and transition settings
-export const SERVER_URL = "";
+export const SERVER_URL = "korisama.top";
 export const TRANSITION_API = true;
 
 // Site theme
@@ -105,5 +105,11 @@ export const socialIcons = [
     ariaLabel: "BiliBili",
     title: "BiliBili",
     svg: "bilibili",
+  },
+  {
+    href: "https://discord.gg/eejZ6SGq28",
+    ariaLabel: "Discord",
+    title: "Discord",
+    svg: "discord",
   },
 ];

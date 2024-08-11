@@ -6,6 +6,7 @@ categories:
   - tech
 tags:
   - algorithm
+image: "/blog-1.png"
 ---
 
 Today I was diving to a problem in CodeForce. Maybe because of my curiosity, I had a try in this problem named _Not a Substring_, which I shouldn't touch.
