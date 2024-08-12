@@ -1,8 +1,8 @@
 
 <br />
 <div id="giscus-container"></div>
-<script>
-    function loadGiscus(theme: string) {
+<script type="module">
+    function loadGiscus(theme) {
         if (theme === "winter") {
           theme = "light";
         }else if (theme === "dracula") {
@@ -11,7 +11,7 @@
           theme = "light";
         }
 
-        const container = document.getElementById('giscus-container')!;
+        const container = document.getElementById('giscus-container');
         container.innerHTML = ''; // Clear existing giscus
 
         const script = document.createElement('script');
@@ -33,11 +33,10 @@
         container.appendChild(script);
     }
 
-    // Initial load
     const currentTheme = localStorage.getItem('theme') || 'winter';
     loadGiscus(currentTheme);
 
-    function onCommentThemeChange(theme: string) {
+    function onCommentThemeChange(theme) {
         loadGiscus(theme);
     }
 
