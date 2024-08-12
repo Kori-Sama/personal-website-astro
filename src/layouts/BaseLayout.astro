@@ -20,6 +20,17 @@ const { title, image, includeSidebar = true } = Astro.props;
 <!doctype html>
 <html lang="zh-cn" class="bg-base-300" data-theme="winter">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ESV2FWYCXB"></script>
+    <script>
+      // @ts-nocheck
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-ESV2FWYCXB');
+      // @ts-check
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title class="sr-only">{`${SITE_TAB} - ${title}`}</title>
