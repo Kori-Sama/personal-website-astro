@@ -107,7 +107,7 @@ import { siteTheme } from "../consts";
       const newTheme = currentTheme === "winter" ? "dracula" : "winter";
       setTheme(newTheme);
       syncThemeToggle();
-      window.onCommentThemeChange();
+      window.onCommentThemeChange(newTheme);
     };
 
     if (themeToggle1 && themeToggle) {

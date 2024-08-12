@@ -48,6 +48,6 @@ export interface EnvelopeInfo {
 
 declare global {
   interface Window {
-    onCommentThemeChange: () => void;
+    onCommentThemeChange: (theme: string) => void;
   }
 }

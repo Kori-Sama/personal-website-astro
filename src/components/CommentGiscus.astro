@@ -33,18 +33,12 @@
         container.appendChild(script);
     }
 
-    function changeTheme(newTheme:string) {
-        localStorage.setItem('theme', newTheme);
-        loadGiscus(newTheme);
-    }
-
     // Initial load
     const currentTheme = localStorage.getItem('theme') || 'winter';
     loadGiscus(currentTheme);
 
-    function onCommentThemeChange() {
-        const newTheme = currentTheme === "winter" ? "dracula" : "winter";
-        changeTheme(newTheme);
+    function onCommentThemeChange(theme: string) {
+        loadGiscus(theme);
     }
 
     window.onCommentThemeChange = onCommentThemeChange;
