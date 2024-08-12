@@ -5,7 +5,7 @@ import { infoTest } from "../consts";
 import type { EnvelopeInfo } from "../types";
 const { title, desc, image, pubDate, badge, categories, tags, url } =
   Astro.props as EnvelopeInfo;
-const displayDate = dayjs(pubDate).format("ddd MMM DD YYYY");
+const displayDate = dayjs(pubDate).format("ddd MM DD YYYY");
 const hasTategories = categories && categories.length > 0;
 const hasTags = tags && tags.length > 0;
 const target = "_self";
