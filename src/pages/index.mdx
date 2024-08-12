@@ -9,6 +9,7 @@ import Success from "../components/blog/success.astro";
 import Warning from "../components/blog/warning.astro";
 import TimeLine from "../components/page/TimeLine.astro";
 import LinkCard from "../components/page/LinkCard.astro";
+import CommentGiscus from "../components/CommentGiscus.astro";
 
 <BaseLayout title="Home">
   <BaseCard title="Home">
@@ -33,5 +34,9 @@ import LinkCard from "../components/page/LinkCard.astro";
   And I'm also good at **C++**, **C#**, **Python** and a little bit **Rust**.<br/>
   ## How this website built?
   This website is built with **[Astro](https://astro.build/)**.
+  </BaseCard>
+  <BaseCard title="Comment">
+  ## Comment
+    <CommentGiscus/>
   </BaseCard>
 </BaseLayout>

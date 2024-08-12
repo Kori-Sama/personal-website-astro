@@ -45,3 +45,9 @@ export interface EnvelopeInfo {
   isBlog: boolean;
   url: string;
 }
+
+declare global {
+  interface Window {
+    onCommentThemeChange: () => void;
+  }
+}
